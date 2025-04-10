@@ -121,3 +121,36 @@ main {
   margin-top: 10px;
 }
 
+footer {
+  background-color: #333;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer-section {
+  color: white;
+}
+
+.footer-section h3 {
+  color: #f8cf29;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.social-links a {
+  color: #f8cf29;
+  text-decoration: none;
+  margin-right: 15px;
+}
+

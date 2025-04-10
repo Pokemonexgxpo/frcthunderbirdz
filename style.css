@@ -9,7 +9,15 @@ body {
 header {
   background-color: #ab2ebd;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 header img {
@@ -19,9 +27,8 @@ header img {
 nav {
   background-color: #f8cf29;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0;
+  gap: 30px;
+  padding: 15px 40px;
 }
 
 nav a {

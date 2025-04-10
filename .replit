@@ -1,4 +1,10 @@
+
+run = "python3 -m http.server"
 modules = ["web"]
 
 [nix]
 channel = "stable-24_05"
+
+[deployment]
+run = "python3 -m http.server"
+deploymentTarget = "cloudrun"

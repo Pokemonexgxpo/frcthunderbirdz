@@ -1,4 +1,5 @@
-run = ["python3", "main.py"]
+run = "python3 index.html"
+modules = ["web", "nodejs-20", "nix"]
 
 [workflows]
 runButton = "Run"
@@ -15,3 +16,9 @@ args = "python -m http.server 5000"
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "python3 index.html"]
+
+[nix]
+channel = "stable-24_05"

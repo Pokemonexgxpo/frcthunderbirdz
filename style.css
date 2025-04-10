@@ -20,6 +20,10 @@ header .logo-section {
   gap: 20px;
 }
 
+header h1 {
+  color: #f8cf29;
+}
+
 header img {
   height: 80px;
 }

@@ -29,7 +29,6 @@ header img {
 }
 
 nav {
-  background-color: #f8cf29;
   display: flex;
   gap: 30px;
   padding: 15px 40px;
@@ -41,11 +40,11 @@ nav a {
   font-weight: bold;
   padding: 8px 15px;
   border-radius: 4px;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(248, 207, 41, 0.2);
 }
 
 main {

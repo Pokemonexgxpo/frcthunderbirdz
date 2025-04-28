@@ -24,6 +24,15 @@ header .logo-section {
   display: flex;
   flex-direction: column;
 }
+.background-image {
+  background-image: url('group.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1100px;;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
 
 header h1 {
   color: #f8cf29;

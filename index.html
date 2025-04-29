@@ -1,76 +1,170 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>FRC Thunderbirdz | Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 10107 Thunderbirdz - FRC Robotics</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo-section">
-      <a href="index.html" class="logo-link">
-        <img src="thunderbirdz-logo.png" alt="Thunderbirdz Logo">
-        <div>
-          <h1>Thunderbirdz</h1>
-          <span class="team-number">FRC 10107</span>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/thunderbirdz-logo.png" alt="Team 10107 Thunderbirdz Logo">
+            </div>
+            <nav>
+                <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#robots">Robots</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1jOQKLwfer5bcgWODZ8RuZ1q8i2K7Ncih1Qfu0kzRhitTAw/viewform?usp=dialog" class="apply-button">Apply</a></li>
+                </ul>
+            </nav>
         </div>
-      </a>
-    </div>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="calendar.html">Calendar</a>
-    <a href="newsletter.html">Newsletter</a>
-    <a href="students.html">For Students</a>
-  </nav>
-  </header>
-  <background class="background-image">
-  </background>
-  <main>
-    <h2>Welcome to Thunderbirdz Robotics</h2>
-    <p>We're FRC Team 10107! Innovating, learning, and competing with heart, brain, and robot!</p>
-    <p>Explore our journey, stay updated on our events, and join our team mission.</p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-    <p>   </p>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <p>Cox Mill High School</p>
-        <p>1355 Cox Mill Rd, Concord, NC 28027</p>
-        <p>Phone: 704-260-6600</p>
-        <p>Email: erin.williams@cabarrus.k12.nc.us</p>
-      </div>
-      <div class="footer-section">
-        <h3>Meeting Times</h3>
-        <p>Monday to Friday</p>
-        <p>9:00 am to 6:00 pm</p>
-        <p>&nbsp;</p>
-        <p>Saturday</p>
-        <p>9:00 am to 12:00 noon</p>
-      </div>
-      <div class="footer-section">
-        <h3>Get Our Socials</h3>
-        <div class="social-links">
-          <a href="#">Twitter</a>
-          <a href="https://www.instagram.com/coxmillthunderbirdz" target="_blank">Instagram</a>
-          <a href="#">Facebook</a>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>TEAM 10107 <span class="highlight">THUNDERBIRDZ</span></h1>
+                <p>Building more than robots: We're building future innovators, engineers, and leaders.</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/team-photo.jpg" alt="Team 10107 Thunderbirdz with robot">
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>ABOUT <span class="highlight">THUNDERBIRDZ</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Team 10107 Thunderbirdz is a FIRST Robotics Competition (FRC) team based in Concord North Carolina. We're a group of passionate high school students who design, build, and program competitive robots while learning valuable STEM and leadership skills.</p>
+                    <p>Founded in 2023, our team has grown to over 25 dedicated members from different backgrounds, all united by our love for robotics and innovation.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>1+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>25+</h3>
+                        <p>Team Members</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>1+</h3>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="robots">
+        <div class="container">
+            <h2>OUR <span class="highlight">ROBOTS</span></h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>2024-2025 Robot</h3>
+                    <p>Our latest robot design features advanced vision systems, precise control mechanisms, and innovative game piece manipulation.</p>
+                </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2>OUR <span class="highlight">TEAM</span></h2>
+            <div class="team-description">
+                <p>The Thunderbirdz team is comprised of dedicated students who work together across different sub-teams:</p>
+                <ul class="team-structure">
+                    <li><strong>Mechanical Team:</strong> Designs and builds the robot structure, mechanisms and systems</li>
+                    <li><strong>Electrical Team:</strong> Creates and maintains all electrical systems and wiring</li>
+                    <li><strong>Programming Team:</strong> Develops code for robot operation, autonomous modes, and vision systems</li>
+                    <li><strong>Business/Outreach Team:</strong> Manages sponsorships, community relations, and team branding</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="sponsors">
+        <div class="container">
+            <h2>OUR <span class="highlight">SPONSORS</span></h2>
+            <p class="sponsor-intro">We're grateful to our generous sponsors who make our team's journey possible.</p>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <h3>Become a Sponsor</h3>
+                    <p>Your support helps us purchase materials, register for competitions, and provide STEM opportunities for our students.</p>
+                    <a href="#contact" class="sponsor-button">Contact Us</a>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Sponsorship Levels</h3>
+                    <ul class="sponsor-levels">
+                        <li><strong>Platinum:</strong> $5,000+</li>
+                        <li><strong>Gold:</strong> $2,500+</li>
+                        <li><strong>Silver:</strong> $1,000+</li>
+                        <li><strong>Bronze:</strong> $500+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action" id="contact">
+        <div class="container">
+            <h2>JOIN THE <span class="highlight">THUNDERBIRDZ</span></h2>
+            <p>Interested in robotics? Want to develop technical and leadership skills while having fun? Join our team!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1jOQKLwfer5bcgWODZ8RuZ1q8i2K7Ncih1Qfu0kzRhitTAw/viewform?usp=dialog" class="cta-button">Apply Now</a>
+            <div class="contact-details">
+                <p><strong>Email:</strong> frc</p>
+                <p><strong>Meeting Location:</strong> Cox Mill High School, Room 107</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/thunderbirdz-logo.png" alt="Team 10107 Thunderbirdz Logo">
+                    <p>Team 10107 Thunderbirdz</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#robots">Robots</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Team 10107 Thunderbirdz. All Rights Reserved.</p>
+                <p>FIRST® and FIRST® Robotics Competition are registered trademarks of FIRST (For Inspiration and Recognition of Science and Technology).</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

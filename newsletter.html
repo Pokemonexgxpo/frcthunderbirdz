@@ -1,46 +1,193 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>FRC Thunderbirdz | Newsletter</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Team 10107 Thunderbirdz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional styles specific to the newsletter page */
+        .newsletter-section {
+            padding: var(--spacing-xl) 0;
+            min-height: 70vh;
+        }
+
+        .newsletter-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-md);
+        }
+
+        .newsletter-item {
+            background-color: var(--color-purple);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--box-shadow);
+        }
+
+        .newsletter-item h3 {
+            color: var(--color-yellow);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .newsletter-date {
+            font-size: 0.9rem;
+            color: var(--color-light-gray);
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        .newsletter-content {
+            line-height: 1.6;
+        }
+
+        .newsletter-subscribe {
+            background-color: var(--color-dark-gray);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+            text-align: center;
+        }
+
+        .newsletter-subscribe h3 {
+            color: var(--color-yellow);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: var(--spacing-sm);
+            border: none;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+        }
+
+        .newsletter-form button {
+            background-color: var(--color-yellow);
+            color: var(--color-black);
+            border: none;
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: var(--color-white);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo-section">
-      <a href="index.html" class="logo-link">
-        <img src="thunderbirdz-logo.png" alt="Thunderbirdz Logo">
-        <h1>Thunderbirdz Robotics</h1>
-      </a>
-    </div>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="calendar.html">Calendar</a>
-    <a href="newsletter.html">Newsletter</a>
-    <a href="students.html">For Students</a>
-  </nav>
-  </header>
-  <main>
-    <h2>Newsletter Signup</h2>
-    <p>Stay connected with Thunderbirdz! Subscribe to our newsletter for updates.</p>
-    <form id="newsletter-form" class="signup-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-    <div class="recent-news">
-      <h3>Recent Updates</h3>
-      <article>
-        <h4>Competition Success!</h4>
-        <p>Our team placed in the regional championships...</p>
-      </article>
-      <article>
-        <h4>New Robot Features</h4>
-        <p>Check out our latest robot improvements...</p>
-      </article>
-    </div>
-  </main>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/thunderbirdz-logo.png" alt="Team 10107 Thunderbirdz Logo">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="newsletter.html" class="active">Newsletter</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#sponsors">Sponsors</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe1jOQKLwfer5bcgWODZ8RuZ1q8i2K7Ncih1Qfu0kzRhitTAw/viewform?usp=dialog" class="apply-button">Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="newsletter-section">
+        <div class="container">
+            <h2>TEAM <span class="highlight">NEWSLETTER</span></h2>
+
+            <div class="newsletter-container">
+                <div class="newsletter-item">
+                    <h3>2025 Season Kickoff Announcement</h3>
+                    <span class="newsletter-date">April 10, 2025</span>
+                    <div class="newsletter-content">
+                        <p>kickoff.</p>
+                        <p>kickoff.</p>
+                    </div>
+                </div>
+
+                <div class="newsletter-item">
+                    <h3>Regional Competition Results</h3>
+                    <span class="newsletter-date">March 15, 2025</span>
+                    <div class="newsletter-content">
+                        <p>competition.</p>
+                        <p>competition.</p>
+                    </div>
+                </div>
+
+                <div class="newsletter-item">
+                    <h3>Outreach Event</h3>
+                    <span class="newsletter-date">February 28, 2025</span>
+                    <div class="newsletter-content">
+                        <p>line.</p>
+                        <p>line!</p>
+                    </div>
+                </div>
+
+                <div class="newsletter-subscribe">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with the latest news, events, and achievements from Team 10107 Thunderbirdz.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/thunderbirdz-logo.png" alt="Team 10107 Thunderbirdz Logo">
+                    <p>Team 10107 Thunderbirdz</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Team 10107 Thunderbirdz. All Rights Reserved.</p>
+                <p>FIRST® and FIRST® Robotics Competition are registered trademarks of FIRST (For Inspiration and Recognition of Science and Technology).</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

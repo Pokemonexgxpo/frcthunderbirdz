@@ -110,6 +110,10 @@ header .container {
     height: 60px;
 }
 
+.team-name {
+    font-size: medium;
+}
+
 nav {
     display: flex;
     align-items: center;

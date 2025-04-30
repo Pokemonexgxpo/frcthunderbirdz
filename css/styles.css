@@ -106,18 +106,24 @@ header .container {
     align-items: center;
 }
 
-.logo img {
-    height: 60px;
-}
-
-.team-name h1 {
-    font-size: 2rem;
-}
-
-.team-name p {
+.logo-section div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header h1 {
+    color: #f8cf29;
+    margin: 0;
+  }
+  
+.team-number {
+    color: #f8cf29;
     font-size: 1rem;
-    align-items: center;
-}
+  }
+  
+  header img {
+    height: 80px;
+  }
 
 nav {
     display: flex;

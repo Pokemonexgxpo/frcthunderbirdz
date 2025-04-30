@@ -110,8 +110,12 @@ header .container {
     height: 60px;
 }
 
-.team-name {
-    font-weight: 600;
+.team-name h1 {
+    font-size: 3.5rem;
+}
+
+.team-name p {
+    font-size: 1.5rem;
 }
 
 nav {
